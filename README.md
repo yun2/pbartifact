@@ -131,3 +131,8 @@ bash tmp.sh
 #you will get dotplots like fig.2-4 (but not all are x-type artifacts).
 ```
 
+###memo
+the adapter sequence of pacbio is shown at
+
+https://github.com/TomSkelly/PacBioEDA/blob/master/H5BasFile.py
+
