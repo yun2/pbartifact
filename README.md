@@ -41,3 +41,12 @@ De novo assembly may be simpler if x-type artifact is removed.
 
 Resequencing will be less affected if high coverage subreads are used.
 
+## Methods
+
+Install samtools and bax2bam.
+Then use get_subreads.sh
+
+```sh
+bash get_subreads.sh
+```
+
