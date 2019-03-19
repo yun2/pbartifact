@@ -37,6 +37,8 @@ In fig.4 we think both adapters were ignored.
 
 We named this type of artifact "x-type artifact".
 
+We think this is a systematic error of PacBio.
+
 ## Discussion
 
 De novo assembly may be simpler if x-type artifact is removed.
@@ -135,4 +137,5 @@ bash tmp.sh
 the adapter sequence of pacbio is shown at
 
 https://github.com/TomSkelly/PacBioEDA/blob/master/H5BasFile.py
+
 
