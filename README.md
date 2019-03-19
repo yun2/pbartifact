@@ -4,18 +4,15 @@
 
 fig.1
 
-We plotted the number of shared 24-mers between the subread and
-its reverse complement. The data was ~150X of E. coli of p6c4 chemistry.
+We plotted the number of shared 24-mers between the subread and its reverse complement. The data was ~150X of E. coli of p6c4 chemistry.
 
-The real data have a long tail.
-But the simulated data don't.
+The real data have a long tail. But the simulated data don't.
 
 Why?
 
 ## dot plot with itself
 
-We extracted the subreads having many number of shared k-mer (24-mer)
-and made dotplots with itself using [gepard](http://cube.univie.ac.at/gepard).
+We extracted the subreads having many number of shared k-mer (24-mer) and made dotplots with itself using [gepard](http://cube.univie.ac.at/gepard).
 
 ![Image](./img/real_0003.png "fig.2")
 
