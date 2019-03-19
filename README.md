@@ -119,7 +119,7 @@ wc -l ecoli.p6c4.candidates.list
 
 mkdir dot
 cd dot
-partition_fa.pl ../ecoli.p6c4.candidates.fa #of_records_described_above -p real
+partition_fa.pl ../ecoli.p6c4.candidates.fa <number_of_records_described_above> -p real
 wget http://cube.univie.ac.at/sites/cub/files/gepard/gepard-1.30.zip
 unzip gepard-1.30.zip
 cd gepard-1.30
