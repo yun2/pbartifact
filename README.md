@@ -1,6 +1,6 @@
 ## Introduction
 
-![Image](number_of_shared_kmers.png "fig.1")
+![Image](./img/number_of_shared_kmers.png "fig.1")
 
 fig.1
 
@@ -17,15 +17,15 @@ Why?
 We extracted the subreads having many number of shared k-mer (24-mer)
 and made dotplots with itself using [gepard](http://cube.univie.ac.at/gepard).
 
-![Image](real_0003.png "fig.2")
+![Image](./img/real_0003.png "fig.2")
 
 fig.2
 
-![Image](real_0007.png "fig.3")
+![Image](./img/real_0007.png "fig.3")
 
 fig.3
 
-![Image](real_0049.png "fig.4")
+![Image](./img/real_0049.png "fig.4")
 
 fig.4
 
