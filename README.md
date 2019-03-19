@@ -5,7 +5,7 @@
 fig.1
 
 We plotted the number of shared 24-mers between the subread and
-its reverse complementary subread of E. coli of p6c4 chemistry.
+its reverse complement. The data was of E. coli of p6c4 chemistry.
 
 The real data have a long tail.
 But the simulated data don't.
