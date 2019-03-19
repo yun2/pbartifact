@@ -5,7 +5,7 @@
 fig.1
 
 We plotted the number of shared 24-mers between the subread and
-its reverse complement. The data was of E. coli of p6c4 chemistry.
+its reverse complement. The data was ~150X of E. coli of p6c4 chemistry.
 
 The real data have a long tail.
 But the simulated data don't.
@@ -31,7 +31,7 @@ fig.4
 
 In fig.2 we think that one adapter was ignored and the other was trimmed.
 
-In fig.3 we think that one adapter was ignored and reading was stopped halfway.
+In fig.3 we think that one adapter was ignored and the reading was stopped halfway.
 
 In fig.4 we think both adapters were ignored.
 
@@ -83,6 +83,8 @@ ln -s E01_1/Analysis_Results/ecoli.p6c4.fastq .
 
 ###pbsim
 ```sh
+wget https://s3.amazonaws.com/files.pacb.com/datasets/secondary-analysis/e-coli-k12-P6C4/polished_assembly.fastq.gz
+gzip -d polished_assembly.fastq.gz
 fq2fa.pl polished_assembly.fastq > polished_assembly.fa
 pbsim.procedure.pl | bash
 ```
