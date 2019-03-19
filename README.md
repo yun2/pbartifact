@@ -45,7 +45,7 @@ Resequencing will be less affected if high coverage subreads are used.
 
 ## Methods
 
-#preparation
+###preparation
 
 ```sh
 git clone git@bitbucket.org:yun2/pbartifact.git
@@ -79,13 +79,13 @@ cd ../../
 ln -s E01_1/Analysis_Results/ecoli.p6c4.fastq .
 ```
 
-#pbsim
+###pbsim
 ```sh
 fq2fa.pl polished_assembly.fastq > polished_assembly.fa
 pbsim.procedure.pl | bash
 ```
 
-#gnuplot
+###gnuplot
 open src/csk4gnuplot.pl and edit:
 ```sh
 #my $prefix="ecoli.p6c4";
@@ -111,7 +111,7 @@ Then
 gnuplot src/plot.gnuplot
 ```
 
-#dotplot real subreads using gepard
+###dotplot real subreads using gepard
 ```sh
 src/csk4gepardinput.pl
 # count the number of records:
