@@ -56,9 +56,9 @@ chmod u+x *.pl
 
 Then add a path to pbartifact/src to $PATH .
 
-Install [samtools](https://github.com/samtools/samtools)
-, [bax2bam](https://github.com/PacificBiosciences/bax2bam)
-, [pbsim](https://github.com/pfaucon/PBSIM-PacBio-Simulator)
+Install [samtools](https://github.com/samtools/samtools),
+[bax2bam](https://github.com/PacificBiosciences/bax2bam),
+[pbsim](https://github.com/pfaucon/PBSIM-PacBio-Simulator)
 and [gepard](http://cube.univie.ac.at/gepard).
 
 Download E. coli data from [here](https://github.com/PacificBiosciences/DevNet/wiki/E.-coli-Bacterial-Assembly).
