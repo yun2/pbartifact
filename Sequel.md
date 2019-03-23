@@ -1,6 +1,6 @@
 ## dot plot with itself
 
-CLRs of Sequel II probably have the same type of artifact.
+CLRs of Sequel II may have the same type of artifact.
 
 See the images below.
 
@@ -16,15 +16,21 @@ fig.2
 ![Image](./img/71and79/0079-2.png "fig.4")
 ![Image](./img/71and79/0079-3.png "fig.5")
 
-fig.3-5 alignment to the genome (hs37d5.fa) by minimap2
-not aligned end-to-end
+fig.3-5
+
+The CLR of fig.1 was aligned to the genome (hs37d5.fa) by minimap2
+
+But it was not aligned end-to-end
 
 ![Image](./img/71and79/0071-1.png "fig.6")
 ![Image](./img/71and79/0071-2.png "fig.7")
 ![Image](./img/71and79/0071-3.png "fig.8")
 
-fig.6-8 alignment to the genome (hs37d5.fa) by minimap2
-not aligned end-to-end
+fig.6-8
+
+The CLR of fig.2 was aligned to the genome (hs37d5.fa) by minimap2
+
+But it was not aligned end-to-end
 
 ## Methods
 
@@ -53,6 +59,13 @@ cp ../../src/gepard_command_generator.pl .
 #check tmp.sh and
 bash tmp.sh
 #you will get dotplots like fig.2-4 (but not all are x-type artifacts).
+```
+
+###alignment
+
+```sh
+minimap2 -x map-pb -d hs37d5.mmi hs37d5.fa
+minimap2 -ax map-pb hs37d5.mmi <part_of_candidates.fa> > output.sam
 ```
 
 ##contact
