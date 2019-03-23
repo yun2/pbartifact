@@ -58,7 +58,7 @@ cp ../../src/gepard_command_generator.pl .
 ./gepard_command_generator.pl > tmp.sh
 #check tmp.sh and
 bash tmp.sh
-#you will get dotplots like fig.2-4 (but not all are x-type artifacts).
+#you will get dotplots like fig.1-2 (but only a few are x-type artifacts).
 ```
 
 ###alignment
