@@ -87,24 +87,24 @@ pbsim.procedure.pl | bash
 ```
 
 ###gnuplot
-open src/csk4gnuplot.pl and edit:
+open src/csk4gnuplot.v1.pl and edit:
 ```sh
 #my $prefix="ecoli.p6c4";
 my $prefix="depth150_0001";
 ```
 then
 ```sh
-src/csk4gnuplot.pl | bash
+src/csk4gnuplot.v1.pl | bash
 ```
 
-open src/csk4gnuplot.pl and edit:
+open src/csk4gnuplot.v1.pl and edit:
 ```sh
 my $prefix="ecoli.p6c4";
 #my $prefix="depth150_0001";
 ```
 then
 ```sh
-src/csk4gnuplot.pl | bash
+src/csk4gnuplot.v1.pl | bash
 ```
 
 Then
@@ -114,7 +114,7 @@ gnuplot src/plot.gnuplot
 
 ###dotplot real subreads using gepard
 ```sh
-src/csk4gepardinput.pl
+src/csk4gepardinput.v1.pl
 # count the number of records:
 wc -l ecoli.p6c4.candidates.list
 
