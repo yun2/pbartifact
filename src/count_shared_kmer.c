@@ -115,8 +115,8 @@ int main(int argc, char * argv[]){
 
   if(argc != 2+hitnum){
     fprintf(stderr, "USAGE: <this> <in.fa>\n");
-    fprintf(stderr, "\t-k=i: kmer's k (default: %d)\n",K);
-    fprintf(stderr, "\t-p: not freq, exist or not\n");
+    fprintf(stderr, "\t-k=i: kmer's k (<=32)\n");
+    fprintf(stderr, "\t-t: count the number of types of shared kmers, not freq\n");
     return 1;
   }
 
