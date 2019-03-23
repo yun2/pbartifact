@@ -114,7 +114,7 @@ gnuplot src/plot.gnuplot
 
 ###dotplot real subreads using gepard
 ```sh
-src/csk4gepardinput.v1.pl
+src/csk4gepardinput.v1.pl | bash
 # count the number of records:
 wc -l ecoli.p6c4.candidates.list
 
