@@ -18,7 +18,7 @@ fig.2
 
 fig.3-5
 
-The CLR of fig.1 was aligned to the genome (hs37d5.fa) by minimap2
+The CLR of fig.1 was aligned to the genome (hs37d5.fa) by [minimap2](https://github.com/lh3/minimap2)
 
 But it was not aligned end-to-end
 
