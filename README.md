@@ -133,7 +133,9 @@ bash tmp.sh
 ```
 
 ###memo
-the adapter sequence of pacbio is shown at
+1. CLRs of Sequel II may have the x-type artifact. See [Sequel.md](Sequel.md)
+
+2. the adapter sequence of pacbio is shown at
 
 https://github.com/TomSkelly/PacBioEDA/blob/master/H5BasFile.py
 
