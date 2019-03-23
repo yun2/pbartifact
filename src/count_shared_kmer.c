@@ -59,7 +59,7 @@ void p_num_of_sharing_kmers(char **, char **, unsigned long long **, unsigned lo
 int compare_ull(const void *a, const void *b);
 
 int opt_fastq=0;
-int opt_freq_not_pop=1;
+int opt_type=0;
 
 int main(int argc, char * argv[]){
   mat[(int)'A'] = 'T';
@@ -86,7 +86,7 @@ int main(int argc, char * argv[]){
   int hitnum=0;
   {
     int result;
-    while((result=getopt(argc,argv,"k:qp")) != -1){
+    while((result=getopt(argc,argv,"k:qt")) != -1){
       switch(result){
         case 'k':
           K=atoi(optarg);
@@ -100,8 +100,8 @@ int main(int argc, char * argv[]){
           opt_fastq=1;
           ++hitnum;
           break;
-        case 'p':
-          opt_freq_not_pop=0;
+        case 't':
+          opt_type=1;
           ++hitnum;
           break;
         case '?':
@@ -337,7 +337,7 @@ void p_num_of_sharing_kmers(char ** reads, char ** nls, unsigned long long ** bu
         ++n_share[i];
         ++j;
         ++k;
-        if(!opt_freq_not_pop){
+        if(opt_type){
           while(j<loop && buckets[i][j] == buckets[i][j-1]){
             ++j;
           }
