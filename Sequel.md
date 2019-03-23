@@ -40,6 +40,8 @@ wget https://downloads.pacbcloud.com/public/dataset/SV-HG002-CLR/hs37d5.HG002-Se
 wget https://downloads.pacbcloud.com/public/dataset/SV-HG002-CLR/hs37d5.HG002-SequelII-CLR.bam.bai
 samtools fasta hs37d5.HG002-SequelII-CLR.bam > hs37d5.HG002-SequelII-CLR.fasta
 ln -s hs37d5.HG002-SequelII-CLR.fasta sequelIIclr.fa
+
+wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz
 ```
 
 ###dotplot real subreads using gepard
