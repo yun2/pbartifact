@@ -44,7 +44,7 @@ ln -s hs37d5.HG002-SequelII-CLR.fasta sequelIIclr.fa
 wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz
 ```
 
-###dotplot real subreads using gepard
+###dotplot using gepard
 ```sh
 src/csk4gepardinput.pl | bash
 head -200 sequelIIclr.fa.candidates.fa > 100.fa
