@@ -12,7 +12,7 @@ fig.1
 
 fig.2
 
-![Image](./img/71and79/0079-1.png "fig.3")
+[![Image](./img/71and79/0079-1.png "fig.3")](./img/71and79/0079-1.png)
 ![Image](./img/71and79/0079-2.png "fig.4")
 ![Image](./img/71and79/0079-3.png "fig.5")
 
