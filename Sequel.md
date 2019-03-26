@@ -43,7 +43,7 @@ The percentage of x-type artifacts out of CLRs was about 0.4%.
 wget https://downloads.pacbcloud.com/public/dataset/SV-HG002-CLR/hs37d5.HG002-SequelII-CLR.bam
 wget https://downloads.pacbcloud.com/public/dataset/SV-HG002-CLR/hs37d5.HG002-SequelII-CLR.bam.bai
 samtools fasta hs37d5.HG002-SequelII-CLR.bam > hs37d5.HG002-SequelII-CLR.fasta
-ln -s hs37d5.HG002-SequelII-CLR.fasta sequeliiclr.fa
+ln -s hs37d5.HG002-SequelII-CLR.fasta sequelIIclr.fa
 
 wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz
 ```
@@ -78,7 +78,7 @@ minimap2 -ax map-pb hs37d5.mmi <part_of_candidates.fa> > output.sam
 
 We divided the CLRs into 1000 chunks.
 ```sh
-partition_fa.pl sequeliiclr.fa 1000 -p part
+partition_fa.pl sequelIIclr.fa 1000 -p part
 ```
 
 There was no basis in particular, but we decided to use part_0008.fa, part_0113.fa and part_0765.fa .
