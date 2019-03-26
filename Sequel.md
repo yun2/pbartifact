@@ -81,6 +81,8 @@ We divided the CLRs into 1000 chunks.
 partition_fa.pl sequelIIclr.fa 1000 -p part
 ```
 
+Files from part_0000.fa to part_0999.fa were generated.
+
 There was no basis in particular, but we decided to use part_0008.fa, part_0113.fa and part_0765.fa .
 
 ####0765
