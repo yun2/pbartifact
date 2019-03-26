@@ -113,7 +113,7 @@ We regarded 1, 2, 4, 5, 7, 8, 9, 10, 11, 14, 15, 16, 20, 25, 26, 29, 34, 95 and 
 
 19/4256 = 0.446 % was x-type artifact.
 
-We used part_0008.fa and part_0113.fa and got 19/4257=0.446% and 12/4257=0.281% in the same way as part_0765.
+We used part_0008.fa and part_0113.fa and got 19/4257=0.446% and 12/4257=0.281% in the same way as part_0765.fa.
 
 We took the average of the three and got 0.4%.
 
