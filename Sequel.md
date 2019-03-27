@@ -85,9 +85,9 @@ Files from part_0000.fa to part_0999.fa were generated.
 
 There was no basis in particular, but we decided to use part_0008.fa, part_0113.fa and part_0765.fa .
 
-####0765
+###0765
 
-We chose CLRs that have 25 or more shared 24mer with its reverse complement
+We chose CLRs that shared 25 or more kinds of 24mer with its reverse complement
  and made dotplots with itself.
 
 ```sh
