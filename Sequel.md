@@ -36,6 +36,9 @@ But it was not aligned end-to-end
 
 The percentage of x-type artifacts out of CLRs was about 0.4%.
 
+## conclusion
+CLRs have at least 0.3% x-type artifacts.
+
 ## Methods
 
 ###data preparation
