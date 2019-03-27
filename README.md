@@ -147,39 +147,39 @@ Files from part_0000.fa to part_0019.fa were generated.
 
 There was no basis in particular, we decided to use part_0002.fa, part_0011.fa and part_0019.fa .
 
-####0002
+###0002
 
-We chose CLRs that have 25 or more shared 24mer with its reverse complement
+We chose subreads that shared 25 or more kinds of 24mer with its reverse complement
  and made dotplots with itself.
 
 ```sh
-cat part_0765.fa | grep ">" | wc -l
-# 4256 (the number of CLRs in part_0765.fa)
+cat part_0002.fa | grep ">" | wc -l
+# 4362 (the number of subreads in part_0002.fa)
 csk4gepardinput.min_hit25.pl | bash
-cat part_0765.fa.candidates.fa | grep ">" | wc -l
-#166
-mkdir dot0765
-cd dot0765
-partition_fa.pl ../part_0765.fa.candidates.fa 166 -p 0765
+cat part_0002.fa.candidates.fa | grep ">" | wc -l
+#22
+mkdir dot0002
+cd dot0002
+partition_fa.pl ../part_0002.fa.candidates.fa 22 -p 0002
 wget http://cube.univie.ac.at/sites/cub/files/gepard/gepard-1.30.zip
 unzip gepard-1.30.zip
 cd gepard-1.30
 cp pbartifact/src/gepard_command_generator.pl .
 # change parameters in gepard_command_generator.pl
-# my $prefix="0765"
-# my $n_fa=166
+# my $prefix="0002"
+# my $n_fa=22
 ./gepard_command_generator.pl | bash
 ```
 
-After these commands, we got dotplot images (pbartifact/img/img0765.tar.gz) .
+After these commands, we got dotplot images (pbartifact/img/img.ecoli.p6c4.tar.gz) .
 
-We regarded 1, 2, 4, 5, 7, 8, 9, 10, 11, 14, 15, 16, 20, 25, 26, 29, 34, 95 and 133 (19 CLRs) as x-type artifacts.
+We regarded 0, 1, 2, 3, 5, 6, 7, 9, 13, 14, 15, 16, 17, 18, 20 and 21 (16 subreads) as x-type artifacts.
 
-19/4256 = 0.446 % was x-type artifact.
+16/4362 = 0.366 % was x-type artifact.
 
-We used part_0008.fa and part_0113.fa and got 19/4257=0.446% and 12/4257=0.281% in the same way as part_0765.fa.
+We used part_0011.fa and part_0019.fa and got 14/4361=0.321% and 11/4361=0.252% in the same way as part_0002.fa.
 
-We took the average of the three and got 0.39% ~ 0.4%.
+We took the average of the three and got 0.31% ~ 0.3%.
 
 ###memo
 1. CLRs of Sequel II may have the x-type artifact. See [Sequel.md](Sequel.md)
