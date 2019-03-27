@@ -1,6 +1,6 @@
 ## dot plot with itself
 
-CLRs of Sequel II may have the same type of artifact.
+CLRs of Sequel II have the same type of artifact.
 
 See the images below.
 

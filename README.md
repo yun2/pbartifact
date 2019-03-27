@@ -182,7 +182,7 @@ We used part_0011.fa and part_0019.fa and got 14/4361=0.321% and 11/4361=0.252% 
 We took the average of the three and got 0.31% ~ 0.3%.
 
 ###memo
-1. CLRs of Sequel II may have the x-type artifact. See [Sequel.md](Sequel.md)
+1. CLRs of Sequel II have the x-type artifact. See [Sequel.md](Sequel.md)
 
 2. the adapter sequence of pacbio is shown at
 https://github.com/TomSkelly/PacBioEDA/blob/master/H5BasFile.py
