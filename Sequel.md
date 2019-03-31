@@ -41,7 +41,7 @@ CLRs have at least 0.3% x-type artifacts on average.
 
 ## Methods
 
-###data preparation
+###### data preparation
 ```sh
 wget https://downloads.pacbcloud.com/public/dataset/SV-HG002-CLR/hs37d5.HG002-SequelII-CLR.bam
 wget https://downloads.pacbcloud.com/public/dataset/SV-HG002-CLR/hs37d5.HG002-SequelII-CLR.bam.bai
@@ -51,7 +51,7 @@ ln -s hs37d5.HG002-SequelII-CLR.fasta sequelIIclr.fa
 wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz
 ```
 
-###dotplot using gepard
+###### dotplot using gepard
 ```sh
 src/csk4gepardinput.pl | bash
 head -200 sequelIIclr.fa.candidates.fa > 100.fa
@@ -70,14 +70,14 @@ bash tmp.sh
 #you will get dotplots like fig.1-2 (but not all are x-type artifacts).
 ```
 
-###alignment
+###### alignment
 
 ```sh
 minimap2 -x map-pb -d hs37d5.mmi hs37d5.fa
 minimap2 -ax map-pb hs37d5.mmi <part_of_candidates.fa> > output.sam
 ```
 
-###percentage
+###### percentage
 
 We divided the CLRs into 1000 chunks.
 ```sh
@@ -88,7 +88,7 @@ Files from part_0000.fa to part_0999.fa were generated.
 
 There was no basis in particular, but we decided to use part_0008.fa, part_0113.fa and part_0765.fa .
 
-###0765
+###### 0765
 
 We chose CLRs that shared 25 or more kinds of 24mer with its reverse complement
  and made dotplots with itself.
@@ -122,7 +122,7 @@ We used part_0008.fa and part_0113.fa and got 19/4257=0.446% and 12/4257=0.281% 
 
 We took the average of the three and got 0.39% ~ 0.4%.
 
-##contact
+## contact
 sprai2017 at gmail dot com
 
 (Takamasa Imai)

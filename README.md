@@ -48,7 +48,7 @@ Resequencing will be less affected if high coverage subreads are used.
 
 ## Methods
 
-###preparation
+###### preparation
 
 ```sh
 git clone git@bitbucket.org:yun2/pbartifact.git
@@ -82,7 +82,7 @@ cd ../../
 ln -s E01_1/Analysis_Results/ecoli.p6c4.fastq .
 ```
 
-###pbsim
+###### pbsim
 ```sh
 wget https://s3.amazonaws.com/files.pacb.com/datasets/secondary-analysis/e-coli-k12-P6C4/polished_assembly.fastq.gz
 gzip -d polished_assembly.fastq.gz
@@ -90,7 +90,7 @@ fq2fa.pl polished_assembly.fastq > polished_assembly.fa
 pbsim.procedure.pl | bash
 ```
 
-###gnuplot
+###### gnuplot
 open src/csk4gnuplot.v1.pl and edit:
 ```sh
 #my $prefix="ecoli.p6c4";
@@ -116,7 +116,7 @@ Then
 gnuplot src/plot.gnuplot
 ```
 
-###dotplot real subreads using gepard
+###### dotplot real subreads using gepard
 ```sh
 src/csk4gepardinput.v1.pl | bash
 # count the number of records:
@@ -136,7 +136,7 @@ bash tmp.sh
 #you will get dotplots like fig.2-4 (but not all are x-type artifacts).
 ```
 
-### percentage
+###### percentage
 
 We divided the subreads into 20 chunks.
 ```sh
@@ -147,7 +147,7 @@ Files from part_0000.fa to part_0019.fa were generated.
 
 There was no basis in particular, we decided to use part_0002.fa, part_0011.fa and part_0019.fa .
 
-###0002
+###### 0002
 
 We chose subreads that shared 25 or more kinds of 24mer with its reverse complement
  and made dotplots with itself.
@@ -181,13 +181,13 @@ We used part_0011.fa and part_0019.fa and got 14/4361=0.321% and 11/4361=0.252% 
 
 We took the average of the three and got 0.31% ~ 0.3%.
 
-###memo
+###### memo
 1. CLRs of Sequel II have the x-type artifact. See [Sequel.md](Sequel.md)
 
 2. the adapter sequence of pacbio is shown at
 https://github.com/TomSkelly/PacBioEDA/blob/master/H5BasFile.py
 
-##contact
+## contact
 sprai2017 at gmail dot com
 
 (Takamasa Imai)
